@@ -1,0 +1,31 @@
+/*
+ * Global constants goes here
+ */
+:root {
+    --primary-color: #42b983;
+}
+
+
+/*
+ * Global CSS goes here, it requires to use :global before each style
+ */
+html {
+    height: 100%;
+}
+body {
+    display: flex;
+    background-color: lightgray;
+    height: 100%;
+    margin: auto;
+}
+#app {
+    color: #696969;
+    max-width: 1600px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+#app p {
+    text-align: justify;
+}
+.hello {
+    color: var(--primary-color);
+}
