@@ -5,6 +5,7 @@ import ListView from './components/Containers/ListView'
 
 
 
+
 export default class App extends Component {
     render() {
 
@@ -14,7 +15,7 @@ export default class App extends Component {
 
                 <div>
                 <br/>
-                <ListView />
+                <ListView/>
                 </div>
 
          
