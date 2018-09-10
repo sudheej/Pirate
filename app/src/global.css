@@ -13,7 +13,6 @@
     height: 100%;
 }
 :global body {
-    display: flex;
     background-color: lightgray;
     height: 100%;
     margin: auto;

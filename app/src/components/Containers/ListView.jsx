@@ -38,7 +38,7 @@ export default class extends Component {
 
   render() {
     return (
-      <ListView background="#f1f2f4" width="500" height="700">
+      <ListView background="#f1f2f4" width="500" height="600">
         <ListViewHeader>
           <Text size="11" color="#696969">Order by name</Text>
         </ListViewHeader>
