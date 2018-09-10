@@ -1,5 +1,5 @@
 # Pirate
-Pirate is a cross-platform docker container GUI explorer
+Pirate/Hatch is a cross-platform docker container GUI explorer
 
 # Introduction
 Pirate aims at solving the problem of exploring docker containers in GUI mode, the goal is to provide quick and easy access to containers for triage purposes. With the rise of windows container a cross-platform desktop application would really help dev & ops to quickly explore containers for problems.
