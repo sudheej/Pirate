@@ -4,7 +4,9 @@ import GridLayout from 'react-grid-layout';
 import ListView from './components/Containers/ListView'
 import ToolBar from './components/Toolbar/Default'
 import InfoBar from './components/Info/Default'
-import FileBrowser from 'react-keyed-file-browser'
+import FileBrowser from './components/FileBrowser/Default'
+
+
 
 
 
@@ -20,10 +22,10 @@ export default class App extends Component {
           ];
 
         return (
-
+          
             <GridLayout className="layout" layout={layout} cols={3} rowHeight={100} width={1200}>
             <div key="a"><ListView /></div>
-            <div key="c"><FileBrowser files={[]} /></div>
+            <div key="c"><FileBrowser /></div>
           </GridLayout>
         )
     }

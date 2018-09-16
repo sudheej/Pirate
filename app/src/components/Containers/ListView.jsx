@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import {execute} from '../../core/containers'
+import {getContainer} from '../../core/actionsinterface'
 import {getImages} from '../../core/images'
 import {FaCube} from 'react-icons/fa'
 import { ProgressCircle } from 'react-desktop/macOs';
@@ -20,6 +21,7 @@ export default class extends Component {
     this.state = { 
       selected: null,
       value: [],
+      selectedState: false,
       images: []
      };
   }
@@ -54,7 +56,7 @@ export default class extends Component {
         })}
         </ListViewSection>
         <ListViewFooter>
-          <Text size="11" color="#696969">Status</Text>
+          <Text size="11" color="#696969">Container State : {this.state.selectedState === 0 ? "ON":"OFF"}</Text>
         </ListViewFooter>
       </ListView>
     );
@@ -89,7 +91,7 @@ export default class extends Component {
   renderItem(title, info, state,status) {
     return (
       <ListViewRow
-        onClick={() => this.setState({ selected: title })}
+        onClick={() => this.setState({ selected: title, selectedState: state })}
         background={this.state.selected === title ? '#d8dadc' : null}
       >
 

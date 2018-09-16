@@ -20,7 +20,8 @@ module.exports = {
                 test: /\.jsx?$/,
                 loader: 'babel-loader',
                 options: {
-                    presets: ['react']
+                    presets: ['react'],
+                    "plugins": ["transform-object-rest-spread"]
                 }
             },
             {
