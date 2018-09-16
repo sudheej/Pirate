@@ -131,11 +131,10 @@ export default class extends React.Component {
   
 
 
-  render() {
+  render(props) {
     return (
       <FileBrowser
-        files={this.state.files}
-
+        files={this.props.files}
         onCreateFolder={this.handleCreateFolder}
         onCreateFiles={this.handleCreateFiles}
         onMoveFolder={this.handleRenameFolder}
